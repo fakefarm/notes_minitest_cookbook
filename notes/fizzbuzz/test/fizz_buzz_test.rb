@@ -14,21 +14,21 @@ class FizzBuzzTest < Minitest::Test
   end
 
   def test_converts_multiples_of_five_to_buzz
-    assert_equal 'Buzz', fb.convert(5)
-    assert_equal 'Buzz', fb.convert(20)
-    assert_equal 'Buzz', fb.convert(25)
+    assert_equal 'Buzz', @fb.convert(5)
+    assert_equal 'Buzz', @fb.convert(20)
+    assert_equal 'Buzz', @fb.convert(25)
   end
 
   def test_converts_multiples_of_three_to_fizz
-    assert_equal 'Fizz', fb.convert(3)
-    assert_equal 'Fizz', fb.convert(12)
-    assert_equal 'Fizz', fb.convert(21)
+    assert_equal 'Fizz', @fb.convert(3)
+    assert_equal 'Fizz', @fb.convert(12)
+    assert_equal 'Fizz', @fb.convert(21)
   end
 
   def test_returns_same_number_for_other_numbers
-    assert_equal 4, fb.convert(4)
-    assert_equal 8, fb.convert(8)
-    assert_equal 22, fb.convert(22)
+    assert_equal 4, @fb.convert(4)
+    assert_equal 8, @fb.convert(8)
+    assert_equal 22, @fb.convert(22)
   end
 
   def test_raises_argument_error_for_bad_argument
